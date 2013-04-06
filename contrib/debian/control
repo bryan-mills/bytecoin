@@ -19,7 +19,7 @@ Build-Depends: debhelper,
  libqt4-dev,
  libqrencode-dev
 Standards-Version: 3.9.2
-Homepage: http://www.bytecoin.org/
+Homepage: http://bitcointalk.org/index.php?topic=164569.0/
 Vcs-Git: git://github.com/bytecoin/bytecoin.git
 Vcs-Browser: http://github.com/bytecoin/bytecoin
 

@@ -1,7 +1,7 @@
 Bytecoin integration/staging tree
 ================================
 
-http://www.bytecoin.org
+https://bitcointalk.org/index.php?topic=164569.0
 
 Copyright (c) 2009-2012 Bytecoin Developers
 
@@ -15,7 +15,7 @@ out collectively by the network. Bytecoin is also the name of the open source
 software which enables the use of this currency.
 
 For more information, as well as an immediately useable, binary version of
-the Bytecoin client sofware, see http://www.bytecoin.org.
+the Bytecoin client sofware, see https://bitcointalk.org/index.php?topic=164569.0.
 
 License
 -------

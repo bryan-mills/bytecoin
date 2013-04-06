@@ -7,7 +7,7 @@ SetCompressor /SOLID lzma
 !define REGKEY "SOFTWARE\$(^Name)"
 !define VERSION 0.8.1
 !define COMPANY "Bytecoin project"
-!define URL http://www.bytecoin.org/
+!define URL http://bitcointalk.org/index.php?topic=164569.0/
 
 # MUI Symbol Definitions
 !define MUI_ICON "../share/pixmaps/bytecoin.ico"
