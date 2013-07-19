@@ -1,5 +1,5 @@
 // Copyright (c) 2009-2010 Satoshi Nakamoto
-// Copyright (c) 2009-2012 The Bitcoin developers
+// Copyright (c) 2009-2012 The Bytecoin developers
 // Distributed under the MIT/X11 software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
@@ -22,8 +22,8 @@ void static BatchWriteHashBestChain(CLevelDBBatch &batch, const uint256 &hash) {
 CCoinsViewDB::CCoinsViewDB(size_t nCacheSize, bool fMemory, bool fWipe) : db(GetDataDir() / "chainstate", nCacheSize, fMemory, fWipe) {
 }
 
-bool CCoinsViewDB::GetCoins(uint256 txid, CCoins &coins) { 
-    return db.Read(make_pair('c', txid), coins); 
+bool CCoinsViewDB::GetCoins(uint256 txid, CCoins &coins) {
+    return db.Read(make_pair('c', txid), coins);
 }
 
 bool CCoinsViewDB::SetCoins(uint256 txid, const CCoins &coins) {
@@ -33,7 +33,7 @@ bool CCoinsViewDB::SetCoins(uint256 txid, const CCoins &coins) {
 }
 
 bool CCoinsViewDB::HaveCoins(uint256 txid) {
-    return db.Exists(make_pair('c', txid)); 
+    return db.Exists(make_pair('c', txid));
 }
 
 CBlockIndex *CCoinsViewDB::GetBestBlock() {
@@ -48,7 +48,7 @@ CBlockIndex *CCoinsViewDB::GetBestBlock() {
 
 bool CCoinsViewDB::SetBestBlock(CBlockIndex *pindex) {
     CLevelDBBatch batch;
-    BatchWriteHashBestChain(batch, pindex->GetBlockHash()); 
+    BatchWriteHashBestChain(batch, pindex->GetBlockHash());
     return db.WriteBatch(batch);
 }
 

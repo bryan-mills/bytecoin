@@ -1,4 +1,4 @@
-// Copyright (c) 2012 The Bitcoin developers
+// Copyright (c) 2012 The Bytecoin developers
 // Distributed under the MIT/X11 software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 #ifndef CHECKQUEUE_H
@@ -157,7 +157,7 @@ public:
         fQuit = true;
         // No need to wake the master, as he will quit automatically when all jobs are
         // done.
-        condWorker.notify_all(); 
+        condWorker.notify_all();
 
         while (nTotal > 0)
             condQuit.wait(lock);
